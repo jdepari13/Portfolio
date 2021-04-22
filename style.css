@@ -18,7 +18,7 @@ nav{
     position: fixed;
     width: 100%;
     top:0;
-    left: 900px;
+    left: 50%;
     z-index:10;
   }
 
@@ -36,7 +36,7 @@ nav{
   }
   
   nav li a {
-    color:rgb(87, 115, 167);
+    color:rgb(0, 65, 187);
     font-weight: 600;
     opacity: 0.6;
     text-decoration: none;
@@ -62,7 +62,6 @@ nav{
 
 
 .welcome{
-    margin-top: 25vh;
     text-align: center;
     font-weight: 500;
     font-size:4em;
@@ -133,25 +132,35 @@ nav{
 .about-me {
     height: 100vh !important;
     background-color: rgb(253, 234, 212);
-    background-repeat: no-repeat;
-    background-size: cover;
     
 }
 
 .about-me img{
-  width: 60%;
-  border-radius: 8%;
-  margin-bottom: 4em;
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(253, 234, 212);
+  
 }
 
 .about-me p{
-  text-align: left;
+  padding-right: 50%;
+  padding-left: 50%;
+  margin-left: 50%;
+  right: 50%;
+  color:rgb(0, 65, 187);
+  text-align: right;
   font-size:1em;
   line-height: 1.5rem;
   font-family: 'EB Garamond', serif; 
 }
 .paragraph2{
   text-indent: 2em;
+}
+
+.h1 {
+  color:rgb(0, 65, 187);
 }
 /* the span tag that wrap starts off my paragraph */
 .bigText {
@@ -284,6 +293,7 @@ nav{
         ;
     }
     
+  
  }
 
 
