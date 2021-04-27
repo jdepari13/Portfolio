@@ -31,7 +31,6 @@ nav{
     padding: 1em 0;
     list-style-type: none;
     padding: 30px;
-    
     font-size: 1.7em;
   }
   
@@ -52,8 +51,6 @@ nav{
   /* HEADER CSS */
 .header {
     position: relative;
-    background-image: url("/images/website_background.svg");
-  
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -68,11 +65,12 @@ nav{
     color: white}
 
 #changingword {
-    color:black;
+  color:rgb(0, 65, 187);
       } 
 
 /* IMAGE GALLERY CSS */
 .image-gallery {
+    background-image: url("images/website_background_2.svg");
     height: 100%;
     display: grid;
     grid-template-columns: 1fr minmax(350px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
