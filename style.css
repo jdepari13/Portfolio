@@ -2,12 +2,15 @@
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
+    
+    
 }
 
 
 img {
     width: 100%;
     height: auto;
+    
 }
 
 /* NAVBAR CSS */
@@ -15,10 +18,10 @@ nav{
     padding-left:4em;
     padding-right: 4em;
     /* TODO: figure out no longer staying fixed */
-    position: fixed;
+    position: absolute;
     width: 100%;
     top:0;
-    left: 50%;
+    left: 1040px;
     z-index:10;
   }
 
@@ -54,28 +57,52 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    background-color: rgb(253, 234, 212);
+    
+    
+
 }
+
+/* .parallax-wrapper {
+  width: 100vw;
+  height:100vh;
+  padding-top:20vh;
+  box-sizing: border-box;
+} */
 
 
 .welcome{
     text-align: center;
+    padding-top: 15%;
+    top: 200px;
     font-weight: 500;
     font-size:4em;
-    color: white}
+    color:#f37c90;
+    
+  }
 
 #changingword {
   color:rgb(0, 65, 187);
       } 
 
+.background {
+  background-image: url("images/websitebackgroundportfolio.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  right: 100px;
+  bottom: 5px;
+  width: 2180px;
+}
+
+  
 /* IMAGE GALLERY CSS */
 .image-gallery {
-    background-image: url("images/website_background_2.svg");
-    height: 100%;
+    /* background-image: url("images/websitebackgroundportfolio.svg");  */
+    
     display: grid;
-    grid-template-columns: 1fr minmax(350px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+    /* grid-template-columns: 1fr minmax(350px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr; */
     grid-template-rows: auto;
-    grid-gap: 10px;
+    grid-gap: 80px;
     padding-top: 200px;
     padding-bottom: 200px;
     grid-template-areas:
@@ -85,13 +112,14 @@ nav{
 }
 
 .box-styling {
-    height: 350px;
+    height: 400px;
     background-color: rgb(110, 110, 110);
     /* clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
   }
 
 .box-wrapper{
-  height:350px;
+  height:360px;
+  width: 390px;
   border-radius: 1%;
 }
 .box1 {
@@ -125,15 +153,34 @@ nav{
   padding-right: .5ch;
 }
 
+.resume {
+  background-image: url(/images/websitebackgroundportfolio.svg);
+  width: 100%;
+  height: 200%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.resume_image {
+  position: fixed;
+  left: 30%;
+  top: 10%;
+  width: 610px;
+  height: fixed;
+}
+
+
+
+
 
 /* ABOUT ME CSS*/
 .about-me {
     height: 100vh !important;
     background-color: rgb(253, 234, 212);
-    
 }
 
-.about-me img{
+.about-me img {
     height: 100%;
     margin: 0;
     background-size: cover;
@@ -142,23 +189,25 @@ nav{
   
 }
 
-.about-me p{
-  padding-right: 50%;
-  padding-left: 50%;
-  margin-left: 50%;
-  right: 50%;
+.about_me p {
+  position: absolute;
+  top:400px;
+  right: 20px;
+  margin-left: 1090px;
+  margin-right: 100px;
+  margin-top: 300px;
   color:rgb(0, 65, 187);
-  text-align: right;
-  font-size:1em;
-  line-height: 1.5rem;
+  font-size: 2em;
+  line-height: 2.5rem;
   font-family: 'EB Garamond', serif; 
 }
 .paragraph2{
   text-indent: 2em;
 }
 
-.h1 {
-  color:rgb(0, 65, 187);
+.about-me h1 {
+  color:#f37c90;
+
 }
 /* the span tag that wrap starts off my paragraph */
 .bigText {
@@ -189,6 +238,7 @@ nav{
     ". logo wrapper ."
     ;
 }
+
 
 .contact-title {
     font-size: 2em;
@@ -245,6 +295,86 @@ nav{
     font-size: 1em;
   }
 
+  .project1_image {
+    height: 100px;
+    width: 700px;
+    padding-left: 33%;
+    margin-top: 160px;
+
+  }
+  .project1 h1{
+    line-height: 95px;;
+    margin-top: 140px;
+  }
+  
+  .project1 {
+    /* background-image: url(/images/website_background_2.svg); */
+    background-repeat: none;
+    background-color: rgb(253, 234, 212);
+    color:rgb(0, 65, 187);
+    font-weight: 600;
+    padding-right: 72%;
+    padding-left: 3%;
+    line-height: 30px;
+    
+  }
+
+  .project3_image {
+    height: 100px;
+    width: 700px;
+    padding-left: 33%;
+    margin-top: 160px;
+
+  }
+  .project3 h1{
+    line-height: 200px;;
+    margin-top: 100px;
+  }
+  
+  .project3_text{
+    /* background-image: url(/images/website_background_2.svg); */
+    
+    background-repeat: none;
+    color:rgb(0, 65, 187);
+    font-weight: 600;
+    padding-right: 72%;
+    padding-left: 3%;
+    line-height: 40px;
+  }
+
+    .project3 {
+      /* background-color: rgb(253, 234, 212); */
+      /* background-image:url(/images/website_background_2.svg); */
+      background-repeat: cover;
+      
+    }
+  
+    .project4_image {
+      margin-top: 90px;
+    }
+
+    .project4_text{
+      color:rgb(0, 65, 187);
+      font-weight: 600;
+  
+      line-height: 40px;
+    }
+
+
+    .project5_image{
+
+    }
+
+    .project5_text{
+      
+    }
+
+
+
+
+
+
+
 
 
   /* MEDIA QUERY FOR SMALL SCREENS */
@@ -289,6 +419,19 @@ nav{
         ". logo ."
         ". wrapper ."
         ;
+    }
+
+    .about-me p {
+      position: absolute;
+      top:200px;
+      right: 20px;
+      margin-left: 1090px;
+      margin-right: 100px;
+      margin-top: 300px;
+      color:rgb(0, 65, 187);
+      font-size: 2em;
+      line-height: 2.5rem;
+    font-family: 'EB Garamond', serif; 
     }
     
   
